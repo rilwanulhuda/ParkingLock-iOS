@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'ParkingLock-iOS_Example' do
+  pod 'ParkingLock-iOS', :path => '../'
+
+  target 'ParkingLock-iOS_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
