@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .orange
         Logger().printLog()
+        TestAccessibility().isReachable()
     }
 
     override func didReceiveMemoryWarning() {

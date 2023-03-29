@@ -17,6 +17,7 @@
 		B266E8D37B3D6AB56750A1B1E4A2B19B /* ParkingLock-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC12A40B32A75AA30A90FE89AD7E84EE /* ParkingLock-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8542AC51CB739D66F626FAC859A6FC1 /* Pods-ParkingLock-iOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6B7F4E1EE44D2B5D92A59775626AC32 /* Pods-ParkingLock-iOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD718FE929D466A100B685F1 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD718FE829D466A100B685F1 /* Logger.swift */; };
+		FDF5669929D4795800B7C433 /* TestAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5669829D4795800B7C433 /* TestAccessibility.swift */; };
 		FEEDE2A3F290AA6385F06C6752BC366A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		DFC458C7C9B6B95E040842DFCF6809E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		EDD4F4052D29F6C46B9DB9B20A21E50C /* Pods-ParkingLock-iOS_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParkingLock-iOS_Example-Info.plist"; sourceTree = "<group>"; };
 		FD718FE829D466A100B685F1 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		FDF5669829D4795800B7C433 /* TestAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAccessibility.swift; sourceTree = "<group>"; };
 		FEAD0C53CFDFC9616DA0F3DFD039DD90 /* Pods-ParkingLock-iOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParkingLock-iOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 				FD718FE829D466A100B685F1 /* Logger.swift */,
 				C57DD52F43ECF495034E9251052C03CF /* Pod */,
 				FABA7654763735A636BFF5EE07D55BD4 /* Support Files */,
+				FDF5669829D4795800B7C433 /* TestAccessibility.swift */,
 			);
 			name = "ParkingLock-iOS";
 			path = ../..;
@@ -372,6 +375,7 @@
 			files = (
 				59EF60DAED24CE45389A1707BD104DE3 /* ParkingLock-iOS-dummy.m in Sources */,
 				FD718FE929D466A100B685F1 /* Logger.swift in Sources */,
+				FDF5669929D4795800B7C433 /* TestAccessibility.swift in Sources */,
 				34BCAEE7633B42329DF3FB9935094251 /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
