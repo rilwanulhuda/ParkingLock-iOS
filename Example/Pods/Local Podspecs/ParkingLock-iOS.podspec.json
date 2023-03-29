@@ -1,0 +1,22 @@
+{
+  "name": "ParkingLock-iOS",
+  "version": "0.1.0",
+  "summary": "A short description of ParkingLock-iOS.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/rilwanulhuda/ParkingLock-iOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "rilwanulhuda": "rilwanulhuda.dev@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/rilwanulhuda/ParkingLock-iOS.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "ParkingLock-iOS/Classes/**/*"
+}

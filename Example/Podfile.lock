@@ -1,0 +1,16 @@
+PODS:
+  - ParkingLock-iOS (0.1.0)
+
+DEPENDENCIES:
+  - ParkingLock-iOS (from `../`)
+
+EXTERNAL SOURCES:
+  ParkingLock-iOS:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ParkingLock-iOS: 7efe5885967d7477d00df58be7e9f242ab220380
+
+PODFILE CHECKSUM: 347b6464784cff38b165a85cedf1a64d3b545411
+
+COCOAPODS: 1.12.0

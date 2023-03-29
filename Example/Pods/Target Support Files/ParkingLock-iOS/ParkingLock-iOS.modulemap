@@ -1,0 +1,6 @@
+framework module ParkingLock_iOS {
+  umbrella header "ParkingLock-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
