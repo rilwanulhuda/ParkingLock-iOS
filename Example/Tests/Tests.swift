@@ -1,5 +1,4 @@
 import XCTest
-import ParkingLock-iOS
 
 class Tests: XCTestCase {
     
