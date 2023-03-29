@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         view.backgroundColor = .orange
         Logger().printLog()
         TestAccessibility().isReachable()
+        TestConnectivityWithParkingLockSDK().printThisLog()
     }
 
     override func didReceiveMemoryWarning() {
