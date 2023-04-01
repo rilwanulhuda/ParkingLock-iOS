@@ -1,5 +1,5 @@
-open class ReplaceMe {
-    open func replaceMe() {
+public class ReplaceMe {
+    public func replaceMe() {
         print("ReplaceMe")
     }
 }
