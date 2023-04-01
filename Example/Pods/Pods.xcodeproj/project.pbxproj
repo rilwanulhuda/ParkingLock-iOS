@@ -16,9 +16,9 @@
 		8328F8A36CB6FDD7D73AAC6932136D8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		B266E8D37B3D6AB56750A1B1E4A2B19B /* ParkingLock-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC12A40B32A75AA30A90FE89AD7E84EE /* ParkingLock-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8542AC51CB739D66F626FAC859A6FC1 /* Pods-ParkingLock-iOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6B7F4E1EE44D2B5D92A59775626AC32 /* Pods-ParkingLock-iOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FD718FE929D466A100B685F1 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD718FE829D466A100B685F1 /* Logger.swift */; };
-		FDF5669929D4795800B7C433 /* TestAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5669829D4795800B7C433 /* TestAccessibility.swift */; };
-		FDF5669B29D47B6B00B7C433 /* TestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF5669A29D47B6B00B7C433 /* TestTest.swift */; };
+		FD4383EF29D72AC100679EC9 /* HandleLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4383EE29D72AC100679EC9 /* HandleLock.swift */; };
+		FD4F782B29D75C9C0091674D /* BLEClassManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F782A29D75C9C0091674D /* BLEClassManager.swift */; };
+		FD5D8E5229D5F30B004CA779 /* BLEEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5D8E5129D5F30B004CA779 /* BLEEnums.swift */; };
 		FEEDE2A3F290AA6385F06C6752BC366A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +50,7 @@
 		6D5D3753164676273432522F4FDA1222 /* Pods-ParkingLock-iOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParkingLock-iOS_Example-frameworks.sh"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		735118388A0CED210023F19943224F53 /* Pods-ParkingLock-iOS_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParkingLock-iOS_Tests-Info.plist"; sourceTree = "<group>"; };
-		7BE89A29913382534CA148373C9D7BC3 /* ParkingLock-iOS */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "ParkingLock-iOS"; path = ParkingLock_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BE89A29913382534CA148373C9D7BC3 /* ParkingLock_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParkingLock_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F238F26661637611741C27A7F075370 /* Pods-ParkingLock-iOS_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParkingLock-iOS_Tests-umbrella.h"; sourceTree = "<group>"; };
 		8771698CAFD5A19205F7C715C4E92D3F /* ParkingLock-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ParkingLock-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		8B9A5120161AF42ADA199BF5B0AA09AD /* Pods-ParkingLock-iOS_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ParkingLock-iOS_Tests"; path = Pods_ParkingLock_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,9 +72,9 @@
 		DD4496CC8DE54E3F7677B3CE52F19AF5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DFC458C7C9B6B95E040842DFCF6809E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		EDD4F4052D29F6C46B9DB9B20A21E50C /* Pods-ParkingLock-iOS_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParkingLock-iOS_Example-Info.plist"; sourceTree = "<group>"; };
-		FD718FE829D466A100B685F1 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		FDF5669829D4795800B7C433 /* TestAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAccessibility.swift; sourceTree = "<group>"; };
-		FDF5669A29D47B6B00B7C433 /* TestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestTest.swift; path = "ParkingLock-iOS/Classes/TestTest.swift"; sourceTree = "<group>"; };
+		FD4383EE29D72AC100679EC9 /* HandleLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HandleLock.swift; path = "ParkingLock-iOS/Classes/HandleLock.swift"; sourceTree = "<group>"; };
+		FD4F782A29D75C9C0091674D /* BLEClassManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEClassManager.swift; sourceTree = "<group>"; };
+		FD5D8E5129D5F30B004CA779 /* BLEEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEEnums.swift; sourceTree = "<group>"; };
 		FEAD0C53CFDFC9616DA0F3DFD039DD90 /* Pods-ParkingLock-iOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParkingLock-iOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,11 +118,11 @@
 			isa = PBXGroup;
 			children = (
 				8D820A0C263B5B53AFE7B2DE58003913 /* ReplaceMe.swift */,
-				FD718FE829D466A100B685F1 /* Logger.swift */,
-				FDF5669829D4795800B7C433 /* TestAccessibility.swift */,
-				FDF5669A29D47B6B00B7C433 /* TestTest.swift */,
 				C57DD52F43ECF495034E9251052C03CF /* Pod */,
 				FABA7654763735A636BFF5EE07D55BD4 /* Support Files */,
+				FD5D8E5129D5F30B004CA779 /* BLEEnums.swift */,
+				FD4383EE29D72AC100679EC9 /* HandleLock.swift */,
+				FD4F782A29D75C9C0091674D /* BLEClassManager.swift */,
 			);
 			name = "ParkingLock-iOS";
 			path = ../..;
@@ -155,7 +155,7 @@
 		6E221DEBCE224EB15957A1009C75A52F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7BE89A29913382534CA148373C9D7BC3 /* ParkingLock-iOS */,
+				7BE89A29913382534CA148373C9D7BC3 /* ParkingLock_iOS.framework */,
 				9E214D42E18EAAF4BF590BECD023B2D9 /* Pods-ParkingLock-iOS_Example */,
 				8B9A5120161AF42ADA199BF5B0AA09AD /* Pods-ParkingLock-iOS_Tests */,
 			);
@@ -277,7 +277,7 @@
 			);
 			name = "ParkingLock-iOS";
 			productName = ParkingLock_iOS;
-			productReference = 7BE89A29913382534CA148373C9D7BC3 /* ParkingLock-iOS */;
+			productReference = 7BE89A29913382534CA148373C9D7BC3 /* ParkingLock_iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9AE8EAA99F0D9F2309F5651B19880C99 /* Pods-ParkingLock-iOS_Tests */ = {
@@ -376,11 +376,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD4383EF29D72AC100679EC9 /* HandleLock.swift in Sources */,
 				59EF60DAED24CE45389A1707BD104DE3 /* ParkingLock-iOS-dummy.m in Sources */,
-				FD718FE929D466A100B685F1 /* Logger.swift in Sources */,
-				FDF5669929D4795800B7C433 /* TestAccessibility.swift in Sources */,
+				FD5D8E5229D5F30B004CA779 /* BLEEnums.swift in Sources */,
 				34BCAEE7633B42329DF3FB9935094251 /* ReplaceMe.swift in Sources */,
-				FDF5669B29D47B6B00B7C433 /* TestTest.swift in Sources */,
+				FD4F782B29D75C9C0091674D /* BLEClassManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +434,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ParkingLock-iOS/ParkingLock-iOS-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ParkingLock-iOS/ParkingLock-iOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ParkingLock-iOS/ParkingLock-iOS.modulemap";
 				PRODUCT_MODULE_NAME = ParkingLock_iOS;
@@ -628,7 +628,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ParkingLock-iOS/ParkingLock-iOS-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ParkingLock-iOS/ParkingLock-iOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ParkingLock-iOS/ParkingLock-iOS.modulemap";
 				PRODUCT_MODULE_NAME = ParkingLock_iOS;

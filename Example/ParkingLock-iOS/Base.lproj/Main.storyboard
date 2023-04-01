@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="ParkingLock-iOS_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="ParkingLock_iOS_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -20,11 +18,67 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ji5-Bc-8lM">
+                                <rect key="frame" x="16" y="313.5" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gkz-BE-nZf"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="testButtonDidTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="x4e-o8-53j"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="v0o-MZ-xD9">
+                                <rect key="frame" x="162.5" y="275.5" width="50" height="116"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLB-Dx-QK0">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.79215686269999996" green="0.0" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="chL-qO-HeZ"/>
+                                            <constraint firstAttribute="width" constant="50" id="hw6-cb-z8y"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="arrow.up" catalog="system"/>
+                                        <connections>
+                                            <action selector="upDownButtonDidTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="d2g-48-xIY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hE0-ir-2ZE">
+                                        <rect key="frame" x="0.0" y="66" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.79215686269999996" green="0.0" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="arrow.down" catalog="system"/>
+                                        <connections>
+                                            <action selector="upDownButtonDidTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4N9-dC-Iv0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hE0-ir-2ZE" firstAttribute="height" secondItem="nLB-Dx-QK0" secondAttribute="height" id="Vqr-lG-BZk"/>
+                                    <constraint firstItem="hE0-ir-2ZE" firstAttribute="width" secondItem="nLB-Dx-QK0" secondAttribute="width" id="WmA-fq-zfF"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ji5-Bc-8lM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="4IX-9g-QHc"/>
+                            <constraint firstItem="Ji5-Bc-8lM" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="4h5-xH-pSF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ji5-Bc-8lM" secondAttribute="trailing" id="Gjj-UT-d0s"/>
+                            <constraint firstItem="v0o-MZ-xD9" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="NpV-ij-5Rm"/>
+                            <constraint firstItem="v0o-MZ-xD9" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Syw-yQ-c7Q"/>
+                            <constraint firstItem="Ji5-Bc-8lM" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="lGu-eV-D4N"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="-0.44977511244377816"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow.down" catalog="system" width="118" height="128"/>
+        <image name="arrow.up" catalog="system" width="118" height="128"/>
+    </resources>
 </document>
