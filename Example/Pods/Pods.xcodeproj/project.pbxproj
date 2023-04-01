@@ -17,8 +17,10 @@
 		B266E8D37B3D6AB56750A1B1E4A2B19B /* ParkingLock-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC12A40B32A75AA30A90FE89AD7E84EE /* ParkingLock-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8542AC51CB739D66F626FAC859A6FC1 /* Pods-ParkingLock-iOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6B7F4E1EE44D2B5D92A59775626AC32 /* Pods-ParkingLock-iOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD4383EF29D72AC100679EC9 /* HandleLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4383EE29D72AC100679EC9 /* HandleLock.swift */; };
-		FD4F782B29D75C9C0091674D /* BLEClassManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F782A29D75C9C0091674D /* BLEClassManager.swift */; };
-		FD5D8E5229D5F30B004CA779 /* BLEEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5D8E5129D5F30B004CA779 /* BLEEnums.swift */; };
+		FD9DC14529D881FA00387AD3 /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9DC14429D881FA00387AD3 /* BLEManager.swift */; };
+		FD9DC14729D8826500387AD3 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9DC14629D8826500387AD3 /* Enums.swift */; };
+		FD9DC14C29D882FA00387AD3 /* Ext+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9DC14B29D882FA00387AD3 /* Ext+String.swift */; };
+		FD9DC14E29D8830A00387AD3 /* Ext+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9DC14D29D8830A00387AD3 /* Ext+Data.swift */; };
 		FEEDE2A3F290AA6385F06C6752BC366A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,8 +75,10 @@
 		DFC458C7C9B6B95E040842DFCF6809E1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		EDD4F4052D29F6C46B9DB9B20A21E50C /* Pods-ParkingLock-iOS_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParkingLock-iOS_Example-Info.plist"; sourceTree = "<group>"; };
 		FD4383EE29D72AC100679EC9 /* HandleLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HandleLock.swift; path = "ParkingLock-iOS/Classes/HandleLock.swift"; sourceTree = "<group>"; };
-		FD4F782A29D75C9C0091674D /* BLEClassManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEClassManager.swift; sourceTree = "<group>"; };
-		FD5D8E5129D5F30B004CA779 /* BLEEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEEnums.swift; sourceTree = "<group>"; };
+		FD9DC14429D881FA00387AD3 /* BLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BLEManager.swift; path = "ParkingLock-iOS/Classes/BLEManager.swift"; sourceTree = "<group>"; };
+		FD9DC14629D8826500387AD3 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Enums.swift; path = "ParkingLock-iOS/Classes/Enums.swift"; sourceTree = "<group>"; };
+		FD9DC14B29D882FA00387AD3 /* Ext+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Ext+String.swift"; path = "ParkingLock-iOS/Classes/Ext+String.swift"; sourceTree = "<group>"; };
+		FD9DC14D29D8830A00387AD3 /* Ext+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Ext+Data.swift"; path = "ParkingLock-iOS/Classes/Ext+Data.swift"; sourceTree = "<group>"; };
 		FEAD0C53CFDFC9616DA0F3DFD039DD90 /* Pods-ParkingLock-iOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParkingLock-iOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,9 +124,11 @@
 				8D820A0C263B5B53AFE7B2DE58003913 /* ReplaceMe.swift */,
 				C57DD52F43ECF495034E9251052C03CF /* Pod */,
 				FABA7654763735A636BFF5EE07D55BD4 /* Support Files */,
-				FD5D8E5129D5F30B004CA779 /* BLEEnums.swift */,
 				FD4383EE29D72AC100679EC9 /* HandleLock.swift */,
-				FD4F782A29D75C9C0091674D /* BLEClassManager.swift */,
+				FD9DC14429D881FA00387AD3 /* BLEManager.swift */,
+				FD9DC14629D8826500387AD3 /* Enums.swift */,
+				FD9DC14B29D882FA00387AD3 /* Ext+String.swift */,
+				FD9DC14D29D8830A00387AD3 /* Ext+Data.swift */,
 			);
 			name = "ParkingLock-iOS";
 			path = ../..;
@@ -377,10 +383,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD4383EF29D72AC100679EC9 /* HandleLock.swift in Sources */,
+				FD9DC14529D881FA00387AD3 /* BLEManager.swift in Sources */,
 				59EF60DAED24CE45389A1707BD104DE3 /* ParkingLock-iOS-dummy.m in Sources */,
-				FD5D8E5229D5F30B004CA779 /* BLEEnums.swift in Sources */,
+				FD9DC14E29D8830A00387AD3 /* Ext+Data.swift in Sources */,
+				FD9DC14729D8826500387AD3 /* Enums.swift in Sources */,
 				34BCAEE7633B42329DF3FB9935094251 /* ReplaceMe.swift in Sources */,
-				FD4F782B29D75C9C0091674D /* BLEClassManager.swift in Sources */,
+				FD9DC14C29D882FA00387AD3 /* Ext+String.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
